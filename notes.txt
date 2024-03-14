@@ -1,0 +1,57 @@
+
+
+--> project create
+--> cleenup
+--> basic css
+--> react-bootstrap install
+    npm i react-bootstrap bootstrap
+--> set bootstrap theem
+    bootswatch.com [bootstrap.min.css]    
+--> pages and components
+--> routing of pages and components
+    react-router-dom
+    npm i react-router-dom
+
+
+Axios
+    package with methd for xmlHttpRequest
+    handles data transformation itself
+    promise based clint side method
+    to install  
+        -npm i Axios
+    
+    axios request structure
+        basic get request
+        axios.get("url)
+        other requests
+        const req=axios.create({options})
+
+        {options}=>
+        {
+            basic_url:"localhost:3000",
+            url:"/allvideos",
+            method:"post"
+            headers:{"Content-Type":"application/json" / "text/plain" / "multipart/form-data},
+            data:{caption:"caption",url:"videourl",image:"image-address-url"}
+        }
+
+    using axios() method
+
+    axios({
+            url:"localhost:3000/allvideos",
+            method:"post"
+            headers:{"Content-Type":"application/json" / "text/plain" / "multipart/form-data},
+            data:{caption:"caption",url:"videourl",image:"image-address-url"}
+    })
+
+
+
+
+toastify
+
+external package for style based alert /flash msgs
+npm i react-toastify
+toast("msg")
+toast.warning()
+toast.sucess()
+toast.error()
